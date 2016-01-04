@@ -1,0 +1,17 @@
+{% extends "website/index.html" %}
+{% load staticfiles %}
+{% block title %}Absolute Design{% endblock title %}
+{% block content %}
+    <div class="jumbo">
+        <img class="jumbo-image" src="{% static 'website/mountains.jpg' %}">
+        <!--<div class="jumbo-image-parallax"></div>-->
+        <h1 class="jumbo-text jumbo-text-parralax">Design is Hard.</h1>
+        <h2 class="jumbo-text jumbo-text-secondary jumbo-text-parralax">Let us do it for you.</h2>
+    </div>
+    <div class="about">
+        <h1>Absolute Design</h1>
+        <br>
+        <h2>We build websites.</h2>
+    </div>
+
+{% endblock content %}

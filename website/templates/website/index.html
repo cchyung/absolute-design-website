@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>{% block title %}Absolute Design{% endblock title %}</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'website/style.css' %}"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="{% static 'website/parallax.min.js' %}"></script>
+    </head>
+    <body>
+        <div class="page">
+            <!--Header-->
+            <div class="header">
+                <img class="logo logo-float-left" src="{% static 'website/logo.png' %}">
+                <div class="nav-container">
+                    <ul class="nav">
+                        <li class="nav-item nav-item-border"><a class="nav-link" href="#">HOME</a></li>
+                        <li class="nav-item nav-item-border"><a class="nav-link" href="#">ABOUT</a></li>
+                        <li class="nav-item nav-item-border"><a class="nav-link" href="#">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Content-->
+            <div class="content">
+                {% block content %}
+                {% endblock %}
+
+            </div>
+            <!--Footer-->
+            <div class="footer">
+            </div>
+        </div>
+    </body>
+</html>
