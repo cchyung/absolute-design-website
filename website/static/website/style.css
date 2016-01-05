@@ -6,15 +6,31 @@ html, body{
     font-size:100%;
     line-height: 1.2;
     display:block;
+    background-color:#FFFFF7;
 }
 
 h1{
     font-size:500%;
     margin:0;
 }
+
 h2{
     font-size:200%;
     margin:0;
+}
+
+p{
+    font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+    font-size:170%;
+    font-weight:500;
+}
+
+.secondary-background{
+    background-color:#de5a51;
+}
+
+.secondary-color{
+    color:#de5a51;
 }
 
 .header{
@@ -42,10 +58,9 @@ h2{
 
 .nav-item{
     float:right;
-    font-size:105%;
+    font-size:100%;
     font-weight:500;
     margin-right:100px;
-    background-color:white;
 
 }
 
@@ -63,18 +78,16 @@ h2{
     position:relative;
     display:block;
     padding:10px 20px;
-    color:black;
     text-decoration:none;
 
 }
 
 .nav-link:hover{
     color:white;
-    text-decoration:none;
 }
 
 .nav-link:visited{
-    color:black;
+    color:inherit;
     text-decoration:none;
 }
 
@@ -120,15 +133,16 @@ h2{
 }
 
 /*home*/
-.jumbo{
+.jumbo-container{
     width:100%;
     position:relative;
-    height:auto;
 
 }
 .jumbo-image{
     width:100%;
     position:relative;
+    height: 800px;
+
 }
 
 .jumbo-text{
@@ -138,18 +152,18 @@ h2{
     position:absolute;
     padding:30px;
     padding:1.2% 1.6%;
-    top:250px;
+    top:300px;
     left:150px;
 }
 
-.jumbo-text-parralax{
+.jumbo-parralax{
     transform: translateY(100px);
 }
 
 
 .jumbo-text-secondary{
     left:150px;
-    top:360px;
+    top:410px;
     position:absolute;
 
 }
@@ -174,11 +188,34 @@ h2{
 
 }
 
-.about{
+.content-block{
+    width:100%;
+
+}
+
+.parallax-container{
+    height:300px;
+
+}
+
+.underline{
+    text-decoration:underline;
+
+}
+
+.content-container{
+    width:100%;
+    background-color:white;
+    padding: 25px 0 35px;
+
+
+}
+
+.content-block-medium{
     padding-top:100px;
     width:70%;
     margin:0 auto;
     overflow:auto;
     display:block;
-}
 
+}
