@@ -1,49 +1,61 @@
 {% extends "website/index.html" %}
 {% load staticfiles %}
+
 {% block title %}Absolute Design{% endblock title %}
 {% block content %}
-    <div class="jumbo-container">
-        <img class="jumbo-image" src="{% static 'website/background.jpg' %}">
-        <h1 class="jumbo-text">Design is Hard.</h1>
-        <h2 class="jumbo-text jumbo-text-secondary">Let us do it for you.</h2>
-    </div>
-    <!-- Ideas for stupid headers lol: Innovative Design, Powerful User Experience, Personal Client Collaboration -->
+<div class="jumbo-container container-shadow">
+<div class="jumbo-image" style="background-image:url({% static 'website/background.jpg' %})"></div>
+<h1 class="jumbo-text">Design is Hard.</h1>
+<h2 class="jumbo-text jumbo-text-secondary">Let us do it for you.</h2>
+</div>
+<!-- Ideas for stupid headers lol: Innovative Design, Powerful User Experience, Personal Client Collaboration -->
 
-    <div class="content-container" style="height:600px;" data-parallax="scroll" data-image-src="{% static 'website/mountains.jpg' %}">
-        <div class="content-block content-block-medium">
-            <h1>Absolute Design</h1>
-            <br>
-            <h2 class="secondary-color underline">We build websites.</h2>
+<div class="content-container">
+    <div class="content-block content-block-medium">
+        <h1>Absolute Design</h1>
+        <br>
+        <h2 class="secondary-color underline">We build websites.</h2>
+        <div class>
             <p>
                 In this day and age, having a clean and beautiful website is absolutely essential to success at
-                any scale. Lorem ipsum dolor sit amet, nulla id id ac sodales magna. Dis bibendum metus viverra tortor,
-                ut ut venenatis platea nam sed curabitur, dis in, praesent vivamus vestibulum, ut bibendum
-                duis a fusce. Lorem mi cursus lorem imperdiet, ligula varius, eget nunc potenti diam pede,
-                luctus et quisque ornare sapien commodo odio, donec massa tincidunt. Laoreet ultrices facilisis
-                et curabitur imperdiet ipsum, et felis, amet sodales tempus, nec arcu faucibus duis.
+                any scale. Presenting your brand in an effective matter while attracting the business of potential clients
+                and customers is exactly what a powerful website should do.  Absolute Design can help you do just that.
             </p>
             <br>
             <br>
             <br>
         </div>
     </div>
+</div>
+<div class="divider"></div>
+<div class="content-container container-shadow">
+    <div class="content-block-medium">
+        <h1>Why Use Us?</h1>
+        <div class="content-coloumn-third">
+            <p class="coloumn-text">In this day and age, having a clean and beautiful website is absolutely essential to success at
+            any scale.</p>
+        </div>
+        <div class="content-coloumn-third">
+           <p class="coloumn-text">In this day and age, having a clean and beautiful website is absolutely essential to success at
+            any scale.</p>
+        </div>
+        <div class="content-coloumn-third">
+            <p class="coloumn-text">In this day and age, having a clean and beautiful website is absolutely essential to success at
+            any scale.</p>
 
-    <div class="parallax-container" ></div>
-
-    <div class="content-container">
-        <div class="content-block content-block-medium">
-            <h1>This is a test block.</h1>
-            <p>
-               Lorem ipsum dolor sit amet, nulla id id ac sodales magna. Dis bibendum metus viverra tortor,
-                ut ut venenatis platea nam sed curabitur, dis in, praesent vivamus vestibulum, ut bibendum
-                duis a fusce. Lorem mi cursus lorem imperdiet, ligula varius, eget nunc potenti diam pede,
-                luctus et quisque ornare sapien commodo odio, donec massa tincidunt. Laoreet ultrices facilisis
-                et curabitur imperdiet ipsum, et felis, amet sodales tempus, nec arcu faucibus duis.
-            </p>
-            <br>
-            <br>
-            <br>
         </div>
     </div>
+</div>
+<div class="content-container content-container-background" data-stellar-background-ratio="0.7" style="background-image:url({% static 'website/mountains.jpg' %});">
+    <h1 class="center white" style="padding-top:200px;">Uncompromising Design.</h1>
 
+    <div class="content-block-medium">
+        <h2 class="white center">A successful website communicates ideas efficiently and effectively while keeping the audience engaged.</h2>
+    </div>
+</div>
+<div class="content-container">
+    <div class="content-block-medium">
+        <h1>This is a test header to see what things look like</h1>
+    </div>
+</div>
 {% endblock content %}

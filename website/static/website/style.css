@@ -6,12 +6,17 @@ html, body{
     font-size:100%;
     line-height: 1.2;
     display:block;
-    background-color:#FFFFF7;
+    opacity: 1;
 }
 
 h1{
     font-size:500%;
     margin:0;
+}
+
+.text-shadow{
+    text-shadow: grey 2.5px 2.5px 2.5px;
+
 }
 
 h2{
@@ -25,6 +30,17 @@ p{
     font-weight:500;
 }
 
+.secondary-font{
+    font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+}
+
+.white{
+    color:white
+}
+.center{
+    text-align:center;
+}
+
 .secondary-background{
     background-color:#de5a51;
 }
@@ -33,12 +49,25 @@ p{
     color:#de5a51;
 }
 
+.emphasis-block{
+    padding: 10px 10px;
+    background-color:white;
+    color:black;
+    margin:0 auto;
+
+}
+
 .header{
     width:100%;
     position:relative;
     display:block;
-    height: 130px;
+    height: 150px;
+    z-index: 10;
+    opacity:1;
 
+}
+.header-transparent{
+    background-color:transparent;
 }
 
 .nav-container{
@@ -53,12 +82,13 @@ p{
 .nav{
     list-style:none;
     display:inline;
+    opacity:1;
 
 }
 
 .nav-item{
     float:right;
-    font-size:100%;
+    font-size:105%;
     font-weight:500;
     margin-right:100px;
 
@@ -98,32 +128,30 @@ p{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    opacity:1;
 }
 
 .page{
     width: 100%;
     min-height:100%;
     position:relative;
+    padding-bottom:300px;
 }
 
 .footer{
     width: 100%;
     position: absolute;
     bottom:0;
-    background-color:
+    left:0;
+    height:300px;
+    background-color:grey;
 
 }
 
-.footer-actual{
-    /*temp*/
-    height:100px;
-    background-color:lightgrey;
-
-}
 
 .logo{
-    height:93px;
-    width:150px;
+    height:113px;
+    width:180px;
 }
 
 .logo-float-left{
@@ -138,11 +166,21 @@ p{
     position:relative;
 
 }
+
+.jumbo-container-top{
+    top:-150px;
+
+}
+
+.container-shadow{
+    box-shadow: 0px 2.5px 5px grey;
+}
+
 .jumbo-image{
     width:100%;
-    position:relative;
     height: 800px;
-
+    background-size:cover;
+    position:relative;
 }
 
 .jumbo-text{
@@ -205,17 +243,46 @@ p{
 
 .content-container{
     width:100%;
-    background-color:white;
-    padding: 25px 0 35px;
-
 
 }
 
+.content-container-background{
+    background-size:cover;
+    height:1000px;
+}
+
+
 .content-block-medium{
     padding-top:100px;
+    padding-bottom:40px;
     width:70%;
     margin:0 auto;
     overflow:auto;
     display:block;
 
 }
+
+.content-block-paddingless{
+    padding-top:0;
+}
+
+.content-coloumn-third{
+    margin-top:40px;
+    width:33.33%;
+    float:right;
+}
+
+.coloumn-text{
+    padding:10px;
+}
+
+.divider{
+    width:80%;
+    margin: 0 auto;
+    height:1px;
+    background-color:black;
+}
+
+
+
+
