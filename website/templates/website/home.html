@@ -14,7 +14,7 @@
     <div class="content-block content-block-medium">
         <h1>Absolute Design</h1>
         <br>
-        <h2 class="secondary-color underline">We build websites.</h2>
+        <h2 class="secondary-color">We build websites.</h2>
         <div class>
             <p>
                 In this day and age, having a clean and beautiful website is absolutely essential to success at
@@ -27,35 +27,44 @@
         </div>
     </div>
 </div>
-<div class="divider"></div>
-<div class="content-container container-shadow">
-    <div class="content-block-medium">
-        <h1>Why Use Us?</h1>
-        <div class="content-coloumn-third">
-            <p class="coloumn-text">In this day and age, having a clean and beautiful website is absolutely essential to success at
-            any scale.</p>
-        </div>
-        <div class="content-coloumn-third">
-           <p class="coloumn-text">In this day and age, having a clean and beautiful website is absolutely essential to success at
-            any scale.</p>
-        </div>
-        <div class="content-coloumn-third">
-            <p class="coloumn-text">In this day and age, having a clean and beautiful website is absolutely essential to success at
-            any scale.</p>
-
-        </div>
-    </div>
-</div>
-<div class="content-container content-container-background" data-stellar-background-ratio="0.7" style="background-image:url({% static 'website/mountains.jpg' %});">
+<div class="content-container content-container-background" data-stellar-background-ratio="0.8" style="background-image:url({% static 'website/mountains.jpg' %}); background-position-y:400px;">
     <h1 class="center white" style="padding-top:200px;">Uncompromising Design.</h1>
-
     <div class="content-block-medium">
         <h2 class="white center">A successful website communicates ideas efficiently and effectively while keeping the audience engaged.</h2>
     </div>
 </div>
 <div class="content-container">
     <div class="content-block-medium">
-        <h1>This is a test header to see what things look like</h1>
+        <h1>Why Use Us?</h1>
+        <div class="content-column-third">
+            <img class="column-image" src="{% static 'website/speedometer.png' %}">
+            <h3 class="column-text center">
+                Efficient Production
+            </h3>
+            <p class="column-text">
+                Time is money.  We value a quick turnout, so our team will work on an accelerated timetable to prototype and build your product as fast as possible.
+            </p>
+        </div>
+        <div class="content-column-third">
+        <img class="column-image" src="{% static 'website/art.png' %}">
+            <h3 class="column-text center">
+                Custom Design
+            </h3>
+            <p class="column-text">
+                We work closely with you to make sure that your product looks exactly the way you want. From the color scheme,
+                to the precise size of the font, your website will be yours.
+            </p>
+        </div>
+        <div class="content-column-third">
+        <img class="column-image" src="{% static 'website/code.png' %}">
+            <h3 class="column-text center">
+                Client Focus
+            </h3>
+            <p class="column-text">
+                We take on very few projects at once so that you can be assured to get the most possible attention, maximizing client focus.
+            </p>
+        </div>
     </div>
 </div>
+
 {% endblock content %}
