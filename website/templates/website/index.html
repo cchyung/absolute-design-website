@@ -5,9 +5,15 @@
         <link rel="stylesheet" type="text/css" href="{% static 'website/style.css' %}"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="{% static 'website/jquery.stellar.min.js' %}"></script>
+        <script src="{% static 'website/headroom.min.js' %}"></script>
+
         <script>
             $(document).ready(function() {
                 $(window).stellar();
+                var myElement = document.querySelector(".header");
+                var headroom  = new Headroom(myElement);
+                headroom.init();
+                console.log("worked!")
             });
 		</script>
     </head>
@@ -35,10 +41,10 @@
                 </div>
                 <div class="footer-content">
                     <ul class="contact-list">
-                        <li class="contact-item">Absolute Design 2016</li>
-                        <li class="contact-item">Denver, CO</li>
-                        <li class="contact-item">email@aboslutedesign.com</li>
-                        <li class="contact-item">(303)-815-4595</li>
+                        <li class="contact-item"><div class="icon-bullet" style="background-image: url({% static 'website/home.png' %})"></div>Absolute Design '16</li>
+                        <li class="contact-item"><div class="icon-bullet" style="background-image: url({% static 'website/globe.png' %})"></div>Denver, CO</li>
+                        <li class="contact-item"><div class="icon-bullet" style="background-image: url({% static 'website/email.png' %})"></div>email@aboslutedesign.com</li>
+                        <li class="contact-item"><div class="icon-bullet" style="background-image: url({% static 'website/phone.png' %})"></div>(303)-815-4595</li>
                     </ul>
 
                 </div>
