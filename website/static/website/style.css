@@ -138,6 +138,7 @@ p{
     display:block;
     padding:10px 20px;
     text-decoration:none;
+    color:black;
     top: 50%;
     transform: translateY(-50%);
 
@@ -296,6 +297,10 @@ p{
 
 }
 
+.text-transparent{
+    padding:1.2% 1.6%;
+    background:rgba(0,0,0,0.7);
+}
 .jumbo-text-border{
     padding:1.2% 1.6%;
     border:solid white 1px;
