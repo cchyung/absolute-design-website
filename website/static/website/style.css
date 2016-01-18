@@ -421,5 +421,12 @@ p{
 
 }
 
+.headliner-text{
+    display:block;
+    width:80%;
+    font-size:400%;
+    text-transform: uppercase;
+}
+
 
 
