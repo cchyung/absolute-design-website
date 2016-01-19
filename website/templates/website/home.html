@@ -4,17 +4,17 @@
 {% block title %}Absolute Design{% endblock title %}
 {% block content %}
 <div class="jumbo-container container-shadow">
-<div class="jumbo-image" data-vide-bg="{% static 'website/skylapse.mp4' %}"></div>
-    <h1 class="jumbo-text text-transparent">Design is Hard,</h1>
-    <h3 class="jumbo-text jumbo-text-secondary text-transparent">Let us do it for you.</h3>
+<div class="jumbo-image" style="background-image:url({% static 'website/background.jpg' %})"></div>
+    <h1 class="jumbo-text jumbo-text-center">Design is Hard.</h1>
+    <h2 class="jumbo-text jumbo-text-secondary jumbo-text-center">Let us do it for you.</h2>
 </div>
-
+<!-- Ideas for stupid headers lol: Innovative Design, Powerful User Experience, Personal Client Collaboration -->
 
 <div class="content-container">
     <div class="content-block content-block-medium">
         <h1>Absolute Design</h1>
 
-        <h3 class="secondary-color">We build websites.</h3>
+        <h2 class="secondary-color">We build websites.</h2>
         <div class>
             <p>
                 In this day and age, having a clean and beautiful website is absolutely essential to success at
@@ -34,7 +34,7 @@
 <div class="content-container content-container-background" data-stellar-background-ratio="0.8" style="background-image:url({% static 'website/mountains.jpg' %}); background-position-y:400px;">
     <h1 class="center white text-transparent" style="position:relative; top:100px; width:80%; margin: 0 auto;">Uncompromising Design.</h1>
     <div class="content-block-medium" style="margin-top:240px;">
-        <h3 class="white center text-transparent">A successful website communicates ideas efficiently and effectively while keeping the audience engaged.</h3>
+        <h2 class="white center text-transparent">A successful website communicates ideas efficiently and effectively while keeping the audience engaged.</h2>
     </div>
 </div>
 
@@ -44,18 +44,18 @@
         <h1>Why Use Us?</h1>
         <div class="content-column-third">
             <img class="column-image" src="{% static 'website/speedometer.png' %}">
-            <h4 class="column-text center">
+            <h3 class="column-text center">
                 Efficient Production
-            </h4>
+            </h3>
             <p class="column-text">
                 Time is money.  We value a quick turnout, so our team will work on an accelerated timetable to prototype and build your product as fast as possible.
             </p>
         </div>
         <div class="content-column-third">
         <img class="column-image" src="{% static 'website/art.png' %}">
-            <h4 class="column-text center">
+            <h3 class="column-text center">
                 Custom Design
-            </h4>
+            </h3>
             <p class="column-text">
                 We work closely with you to make sure that your product looks exactly the way you want. From the color scheme,
                 to the precise size of the font, your website will be yours.
@@ -63,9 +63,9 @@
         </div>
         <div class="content-column-third">
         <img class="column-image" src="{% static 'website/code.png' %}">
-            <h4 class="column-text center">
+            <h3 class="column-text center">
                 Client Focus
-            </h4>
+            </h3>
             <p class="column-text">
                 We take on only a couple projects at once so that you can be assured to get the most possible attention, maximizing client focus.
             </p>
