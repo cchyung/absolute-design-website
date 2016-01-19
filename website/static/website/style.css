@@ -346,6 +346,7 @@ p{
 .content-container-background{
     background-size:cover;
     height:800px;
+    overflow:auto;
 }
 
 
