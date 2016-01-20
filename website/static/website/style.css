@@ -27,7 +27,7 @@ h2{
 
 h3{
     margin:0;
-    font-size:250%;
+    font-size:220%;
 }
 
 h4{
@@ -281,8 +281,6 @@ p{
     padding:1.2% 1.6%;
     top:300px;
     left:150px;
-    text-transform: uppercase;
-
 }
 
 .jumbo-parralax{
@@ -292,7 +290,7 @@ p{
 
 .jumbo-text-secondary{
     left:150px;
-    top:460px;
+    top:450px;
     position:absolute;
     font-weight: 600;
 
@@ -340,31 +338,22 @@ p{
 .content-container{
     width:100%;
     background-size:cover;
-
 }
 
 .content-container-background{
     background-size:cover;
     height:800px;
-    overflow:auto;
 }
 
 
 .content-block-medium{
     padding-top:100px;
     padding-bottom:40px;
-    width:70%;
+    width:75%;
     margin:0 auto;
+    overflow:auto;
     display:block;
 
-}
-
-.content-block-small{
-    padding-top:100px;
-    padding-bottom:40px;
-    width:50%;
-    margin:0 auto;
-    display:block;
 }
 
 .content-block-paddingless{
