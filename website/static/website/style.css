@@ -32,7 +32,7 @@ h3{
 
 h4{
     font-size:180%;
-    margin-bottom:0px;
+    margin-bottom:0;
 }
 
 p{
@@ -209,7 +209,7 @@ p{
 }
 
 .contact-item{
-    padding: 5px 0px;
+    padding: 5px 0;
     width:25%;
     font-size:90%;
 
@@ -254,14 +254,14 @@ p{
 }
 
 .container-shadow{
-    box-shadow: 0px 2.5px 5px grey;
+    box-shadow: 0 2.5px 5px grey;
 }
 
 .tele-image{
     margin: auto;
     height:400px;
     width:400px;
-    padding: 40px 0px;
+    padding: 40px 0;
 
 }
 
@@ -296,9 +296,15 @@ p{
 
 }
 
+.text-solid-left{
+  padding:1.2% 1.6%;
+  padding-left:8%;
+  background-color:black;
+}
+
 .text-solid{
-    padding:1.2% 1.6%;
-    background-color:black;
+  padding:1.2% 1.6%;
+  background-color:black;
 
 }
 
