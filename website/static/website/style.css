@@ -11,6 +11,7 @@ html, body{
 
 h1{
     font-size:500%;
+    font-weight:500;
     margin:0;
     padding-bottom:30px;
 }
@@ -23,23 +24,31 @@ h1{
 h2{
     font-size:400%;
     margin:0;
+    font-weight:500;
+
 }
 
 h3{
     margin:0;
     font-size:220%;
+    font-weight:500;
+
 }
 
 h4{
     font-size:180%;
     margin-bottom:0;
+    font-weight:600;
+
 }
 
 p{
     font-family: Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
     font-size:170%;
     font-weight:500;
+    padding: 0 10px;
 }
+
 .primary-font{
     font-family:"HelveticaNeue-Light";
 }
@@ -275,7 +284,7 @@ p{
 .jumbo-text{
     color:white;
     margin: 0 0;
-    font-weight:600;
+    font-weight:300;
     position:absolute;
     padding:30px;
     padding:1.2% 1.6%;
@@ -292,7 +301,7 @@ p{
     left:150px;
     top:450px;
     position:absolute;
-    font-weight: 600;
+    font-weight: 500;
 
 }
 
@@ -386,6 +395,17 @@ p{
     padding-bottom:40px;
 }
 
+.content-image{
+  display:block;
+  height:100px;
+  width:100px;
+  padding-top:40px;
+}
+
+.content-image-center{
+  margin:0 auto;
+}
+
 .divider{
     width:80%;
     margin: 0 auto;
@@ -442,6 +462,7 @@ p{
     display:block;
     width:70%;
     font-size:400%;
+    font-weight:500;
     text-transform: uppercase;
 }
 
@@ -456,21 +477,61 @@ p{
     width:50%;
 }
 
-.content-column-image{
-    display:block;
-    position:relative;
-    height:100px;
-    width:100px;
-    background-color:grey;
-    float:left;
-    transform: translateY(-50%);
-    top:50%;
-    margin: 20px;
+
+/*contact form */
+form{
+  width:80%;
+  margin:0 auto;
+  padding: 40px 0;
 }
 
-.content-column-text{
-    float:left;
-    position:relative;
-    transform: translateY(-50%);
-    top:50%;
+label{
+  display:block;
+  font-size:150%;
+  font-weight:600;
+  margin: 20px 0;
+}
+
+input{
+  display:block;
+  width:100%;
+  border: 1px solid grey;
+  font-size:110%;
+  padding:10px;
+  transition: all 0.5s;
+}
+
+.input-message{
+  display:block;
+  width:100%;
+  border: 1px solid grey;
+  font-size:110%;
+  padding:10px;
+  transition: all 0.5s;
+  resize:none;
+  height:10em;
+}
+
+/*TODO Make a cool effect for focus*/
+input:focus{
+
+}
+
+button{
+  background-color:white;
+  border: 1px solid grey;
+  height:40px;
+  min-width:100px;
+  margin: 20px;
+  font-size:100%;
+  transition: 0.5s all;
+}
+
+button:hover{
+  background-color:black;
+  color:white;
+}
+
+.form-button{
+
 }

@@ -8,5 +8,5 @@ def home(request):
 def about(request):
     return render(request, 'website/about.html')
 
-def test(request):
-    return render(request, 'website/test.html')
+def contact(request):
+    return render(request, 'website/contact.html')
