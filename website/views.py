@@ -1,4 +1,5 @@
 from django.shortcuts import render
+import mail
 
 # Create your views here.
 
@@ -9,4 +10,12 @@ def about(request):
     return render(request, 'website/about.html')
 
 def contact(request):
-    return render(request, 'website/contact.html')
+    if request.method == 'POST':
+        name = request.POST['fullname']
+        email = request.POST['email']
+        message = request.POST['message']
+        mail.sendemail(name, email, message)
+        return render(request, 'website/contact_success.html')
+
+    else:
+        return render(request, 'website/contact.html')

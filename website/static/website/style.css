@@ -49,6 +49,8 @@ p{
     padding: 0 10px;
 }
 
+
+
 .primary-font{
     font-family:"HelveticaNeue-Light";
 }
@@ -110,20 +112,20 @@ p{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    width:1000px;
-    margin-right:40px;
-
+    width:100%;
 }
 
 .nav{
+    position:relative;
     list-style:none;
-    display:inline;
+    display:block;
     opacity:1;
+    margin:0;
 
 }
 
 .nav-item{
-    float:right;
+    float:left;
     font-size:90%;
     font-weight:500;
     margin-right:100px;
@@ -219,7 +221,7 @@ p{
 
 .contact-item{
     padding: 5px 0;
-    width:25%;
+    width:100%;
     font-size:90%;
 
 
@@ -418,44 +420,41 @@ p{
 }
 
 /*about page*/
-
 .profile-row{
     width:100%;
-    height:250px;
-    padding: 20px 0px;
+    position:relative;
+    height:400px;
+
 }
 
 .profile-name{
     margin-top:40px;
+    margin:0 auto;
 }
 
 .profile-pic{
+    display:block;
     position:relative;
-    height:180px;
-    width:180px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color:grey;
-    float:left;
-    margin: 0px 20px;
+    margin: 0 auto;
+    padding: 40px;
+    height:200px;
+    width:200px;
+    background-size:cover;
+
 }
 
 .profile-content{
+    margin: 0 auto;
     position:relative;
+    top:50%;
     padding: 0 40px;
     float:left;
-    width:50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
+    width:80%;
 
+}
 
 .profile-pic-right{
     float:right;
-}
-
-.profile-pic-left{
-
 }
 
 .headliner-text{
@@ -464,12 +463,13 @@ p{
     font-size:400%;
     font-weight:500;
     text-transform: uppercase;
+
 }
 
 .content-row{
     width:100%;
-    margin: 30px 0;
-    height:240px;
+    overflow: auto;
+
 }
 
 .content-column-half{
@@ -513,10 +513,6 @@ input{
 }
 
 /*TODO Make a cool effect for focus*/
-input:focus{
-
-}
-
 button{
   background-color:white;
   border: 1px solid grey;
@@ -533,5 +529,155 @@ button:hover{
 }
 
 .form-button{
+
+
+}
+
+@media only screen and (max-width:380px){
+      html, body{
+        font-size:80%;
+        width:100%;
+      }
+
+      body{
+        background-color:white;
+      }
+
+      p{
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+      }
+
+      secondary-font{
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      }
+
+      h1{
+          font-size:350%;
+      }
+
+      h1, h2, h3, h4{
+        padding: 10px;
+      }
+
+      .column-text{
+        padding:2px;
+      }
+
+
+
+      .nav-container{
+        width:100%;
+        min-width:100%;
+
+      }
+
+      .column-image{
+        height:100px;
+        width:100px;
+        padding-top:30px;
+        padding-bottom:10px;
+
+      }
+
+      .content-column-third{
+        float:none;
+        margin: 0 auto;
+        width:100%;
+
+      }
+
+      .profile-content{
+          padding: 0 10px;
+          width:100%;
+      }
+
+      .contact-list{
+        padding-left:10px;
+      }
+
+      .jumbo-image{
+        height:300px;
+      }
+
+      .jumbo-text{
+        top:80px;
+        left: 10px;
+        font-size:350%;
+      }
+
+      .jumbo-text-secondary{
+        top:160px;
+      }
+
+      .headliner-text{
+        font-size:300%;
+        padding-top:50px;
+      }
+
+      h4{
+        margin-top:15px;
+      }
+
+      .content-column-half{
+        float:none;
+        width:100%;
+      }
+
+      .content-row{
+        width:100%;
+      }
+
+      .profile-pic{
+        padding:5px;
+      }
+
+      .content-block-medium{
+        padding-top:25px;
+        width:85%;
+      }
+
+
+      .form{
+        width:100%;
+        margin-left:0;
+        margin-right:0;
+      }
+
+      .contact-item{
+        font-size: 110%;
+      }
+
+      .icon-bullet{
+        position:relative;
+        top:50%;
+        transform: translateY(-50%;);
+      }
+
+
+      button{
+        font-size:130%;
+        margin: 20px 0px;
+      }
+
+      .header{
+        width:100%;
+        height:120px;
+        position:relative;
+      }
+      .nav{
+        padding-left: 0;
+      }
+      .nav-item{
+        float:none;
+        margin:0 auto;
+        width:100%;
+      }
+
+
+      .nav-container{
+        bottom:0px;
+      }
+
 
 }

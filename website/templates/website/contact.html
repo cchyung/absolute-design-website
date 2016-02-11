@@ -7,12 +7,12 @@
   <div class="content-block-medium">
     <h2>Contact Us.</h2>
     <h4 class="secondary-color">Want to hire us? Have any questions? Shoot us an email.</h4>
-    <form>
-      <label>Full Name</label><input type="text" name="name">
+    <form action="{% url 'website:contact' %}" method="post">
+      {% csrf_token %}
+      <label>Full Name</label><input type="text" name="fullname">
       <label>Email</label><input type="text" name="email">
-      <label>Subject</label><input type="text" name="subject">
       <label>Message</label><textarea class="input-message" type="text" name="message"></textarea>
-      <button class="form-button">Submit</button>
+      <button type="submit" value="Send" class="form-button">Submit</button>
 
     </form>
   </div>

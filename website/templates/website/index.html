@@ -3,33 +3,35 @@
     <head>
         <title>{% block title %}Absolute Design{% endblock title %}</title>
         <link rel="stylesheet" type="text/css" href="{% static 'website/style.css' %}"/>
+        <link rel="icon" href="{% static 'website/favicon.png' %}"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="{% static 'website/jquery.stellar.min.js' %}"></script>
         <script src="{% static 'website/jquery.vide.min.js' %}"></script>
         <script src="{% static 'website/headroom.min.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'website/responsive-nav.css' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <script src="{% static 'website/responsive-nav.js' %"></script>
+
+
 
         <script>
             $(document).ready(function() {
                 $(window).stellar();
-                var myElement = document.querySelector(".header");
-                var headroom  = new Headroom(myElement);
-                headroom.init();
-                console.log("worked!")
             });
-		</script>
+		    </script>
     </head>
     <body>
 
         <div class="page">
             <!--Header-->
             <div class="header header-compressed header-fixed container-shadow">
-                <div class="nav-container">
+                <nav class="nav-container">
                     <ul class="nav">
-                        <li class="nav-item nav-item-compressed"><a class="nav-link" href="{% url 'website:contact'}">CONTACT US</a></li>
-                        <li class="nav-item nav-item-compressed"><a class="nav-link" href="{% url 'website:about' %}">ABOUT</a></li>
                         <li class="nav-item nav-item-compressed"><a class="nav-link" href="{% url 'website:home' %}">HOME</a></li>
+                        <li class="nav-item nav-item-compressed"><a class="nav-link" href="{% url 'website:about' %}">ABOUT</a></li>
+                        <li class="nav-item nav-item-compressed"><a class="nav-link" href="{% url 'website:contact' %}">CONTACT</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
             <!--Content-->
             <div class="content">
@@ -44,7 +46,7 @@
                     <ul class="contact-list">
                         <li class="contact-item"><div class="icon-bullet" style="background-image: url({% static 'website/home.png' %})"></div>Absolute Design '16</li>
                         <li class="contact-item"><div class="icon-bullet" style="background-image: url({% static 'website/globe.png' %})"></div>Denver, CO</li>
-                        <li class="contact-item"><div class="icon-bullet" style="background-image: url({% static 'website/email.png' %})"></div>email@aboslutedesign.com</li>
+                        <li class="contact-item"><div class="icon-bullet" style="background-image: url({% static 'website/email.png' %})"></div>contact@aboslutedesigncompany.com</li>
                         <li class="contact-item"><div class="icon-bullet" style="background-image: url({% static 'website/phone.png' %})"></div>(303)-815-4595</li>
                     </ul>
 

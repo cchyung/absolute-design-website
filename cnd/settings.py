@@ -15,6 +15,12 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'chyungspice'
+EMAIL_HOST_PASSWORD = 'taejin98'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -25,7 +31,17 @@ SECRET_KEY = '1^0lxdk+3y2e05*80u52=hjjxsp7*2xq1!1#tvawys8e%xk22&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+]
+
+#Security settings
+#CSRF_COOKIE_SECURE = True
+#SESSION_COOKIE_SECURE = True
+#SECURE_SSL_REDIRECT = False
+#CSRF_COOKIE_HTTPONLY = True
+#SECURE_BROWSER_XSS_FILTER = True
+#SECURE_CONTENT_TYPE_NOSNIFF = True
+#X_FRAME_OPTIONS = 'DENY'
 
 
 # Application definition
