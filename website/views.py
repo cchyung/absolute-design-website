@@ -1,5 +1,5 @@
 from django.shortcuts import render
-import mail
+from website import mail
 
 # Create your views here.
 

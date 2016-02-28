@@ -15,9 +15,11 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+ADMINS = (
+    ('Conner', 'conner@absolutedesigncompany.com')
+)
+
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'chyungspice'
-EMAIL_HOST_PASSWORD = 'taejin98'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
@@ -29,7 +31,7 @@ EMAIL_USE_TLS = True
 SECRET_KEY = '1^0lxdk+3y2e05*80u52=hjjxsp7*2xq1!1#tvawys8e%xk22&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
 ]
