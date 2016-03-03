@@ -92,14 +92,7 @@ WSGI_APPLICATION = 'cnd.wsgi.application'
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
 DATABASES = {
-     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'absolutedesign',
-        'USER': 'conner',
-        'PASSWORD': 'taejin98',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
+
 }
 
 
