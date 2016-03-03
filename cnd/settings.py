@@ -31,7 +31,7 @@ EMAIL_USE_TLS = True
 SECRET_KEY = '1^0lxdk+3y2e05*80u52=hjjxsp7*2xq1!1#tvawys8e%xk22&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
 ]
